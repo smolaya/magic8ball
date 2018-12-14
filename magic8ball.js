@@ -12,7 +12,7 @@ let lastName = readlineSync.question ('What is your last name?');
     let letsPlay = readlineSync.question ('Do you want to ask the mysterious magic 8 ball a question?');
 
       if (letsPlay === 'yes'){
-        readlineSync.question ('What do you want to ask the magic 8 ball?');
+        readlineSync.question ('What do you want to ask the magic 8 ball? (yes/no)');
       }
       else if (letsPlay === 'no'){
         console.log('bye!');
@@ -20,7 +20,7 @@ let lastName = readlineSync.question ('What is your last name?');
       }
       else {
         console.log('I could not understand you, please try again..');
-        return;
+        return game();
       };
 
 
